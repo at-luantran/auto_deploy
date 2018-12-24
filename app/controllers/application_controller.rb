@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   def hello
-    render html: "hello, world!"
+    user = User.first.email
+    render html: "hello, world email: #{user}"
   end
 end
