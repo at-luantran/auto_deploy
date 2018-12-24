@@ -79,7 +79,10 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: heroku_app_production
-  username: heroku_app
-  password: <%= ENV['HEROKU_APP_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  database: dadgco2mo65tuh
+  username: ousywasmuvrtcr
+  password: 3cacc8c1a5487a958c4a475abb1be40a375f357a07c5959d01cf93fa1439b8bf
+  host: ec2-54-235-247-209.compute-1.amazonaws.com
+  port: 5432
